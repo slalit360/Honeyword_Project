@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>SessionTest</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>hreg</servlet-name>
+    <servlet-class>pack1.RegAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hreg</servlet-name>
+    <url-pattern>/hregaction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ula</servlet-name>
+    <servlet-class>pack1.UloginAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ula</servlet-name>
+    <url-pattern>/ulaction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ala</servlet-name>
+    <servlet-class>pack1.AloginAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ala</servlet-name>
+    <url-pattern>/alaction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>hla</servlet-name>
+    <servlet-class>pack1.HloginAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hla</servlet-name>
+    <url-pattern>/htlaction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>hlogin</servlet-name>
+    <servlet-class>pack1.HackerLoginAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hlogin</servlet-name>
+    <url-pattern>/hackerloginaction</url-pattern>
+  </servlet-mapping>
+</web-app>
